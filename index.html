@@ -1,6 +1,34 @@
 ---
-layout: default
+layout: main
 ---
+
+<header class='main twelvecol last row'>
+  <div class='logo threecol'>
+    <img src='img/logo.png'>
+  </div>
+
+  <div class='title ninecol last'>
+    <h1>Jose Luis Rivas</h1>
+
+    <div class='tagline'>
+      <p>A venezuelan <a href='#ghostbar'>Digital Crafter & Open Source Advocate</a> / <a href='#joseluisrivas'>Freethinker & Pragmatic</a></p>
+    </div> <!-- End of div.tagline -->
+
+  </div> <!-- End of div.title -->
+
+</header> <!-- End of header.main -->
+
+<div class='clearfix'></div> <!-- Separates the header from the upper-side CTA -->
+
+<div class='row'>
+  <section id='up-first' class='twelvecol last'>
+    <ul>
+      <li><a href='mailto:joseluisDELETETHIS@rivco.net'><img src='{{site.baseurl}}/img/icons/message.png' alt='Email Jose Luis Rivas'></a></li>
+      <li><a href='https://www.facebook.com/joseluisrivas'><img src='{{site.baseurl}}/img/icons/facebook.png' alt='Facebook Jose Luis Rivas'></a></li>
+      <li><a href='http://log.joseluisrivas.net'><img src='{{site.baseurl}}/img/logo-log.48H.png' alt='Log de Jose Luis Rivas'></a></li>
+    </ul>
+  </section> <!-- End of section.up-first -->
+</div> <!-- end of div.row -->
 
 <div class="article-navigation">
   {% for item in site.categories.articles limit:40 offset:0 %}

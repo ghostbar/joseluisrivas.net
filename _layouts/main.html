@@ -1,0 +1,44 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Jose Luis Rivas's Homepage</title>
+    <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.ico' type='image/x-icon' />
+
+    <link href='http://fonts.googleapis.com/css?family=Alegreya:400italic,700italic,900italic,400,700,900' rel='stylesheet' type='text/css'>
+
+    <link rel='stylesheet' href='{{site.baseurl}}/stylesheets/style.css'>
+  </head>
+
+  <body>
+    <div id='container' class='container'>
+
+      <div class='row'>
+        <nav class='main'>
+          <header class='hide'>
+            <a href='{{site.baseurl}}'>
+              <img class='logo' src='{{site.baseurl}}/img/logo.48H.png'>
+              <h1>{{site.basename}}</h1>
+            </a>
+          </header>
+
+          <ul>
+            <li><a href='#'>Contact</a></li>
+            <li><a href='#'>@ghostbar</a></li>
+            <li><a href='#'>@joseluisrivas</a></li>
+          </ul>
+        </nav>
+      </div> <!-- end div.row -->
+
+      <div class='row'>
+        {{content}}
+      </div> <!-- End div.row for content -->
+
+      <footer class='main'>
+        © 2012, Jose Luis Rivas.
+      </footer>
+    </div> <!-- End of div#container.container -->
+  </body>
+</html>

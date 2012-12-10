@@ -1,0 +1,56 @@
+@import 'reset'
+@import 'functions'
+@import 'base'
+@import 'fonts'
+@import 'sprites'
+*
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+  *behavior url(https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc)
+body
+  font-size 1em
+  width 980px
+  header.header
+    #logo
+      float left
+    #info
+      text-transform uppercase
+      font-size 1em
+      border 1px solid #ccc
+      float right
+      li
+        padding 0 1em
+      .left
+        font-weight bold
+  #products
+    margin-top 1.33em
+    > ul > li
+      width 100%
+      .header
+        font-weight bold
+        border-bottom 1px solid #ccc
+      ul
+        li
+          float left
+        .name
+          width 50%
+        .qty
+          width 10%
+        .price
+          text-align right
+          width 20%
+        .total
+          text-align right
+          width 20%
+  #totals
+    margin-top 2em
+    float right
+    border 1px solid #ccc
+    li
+      padding 0 1em
+    .left
+      font-weight bold
+  footer.footer
+    text-align center
+    margin-top 1em

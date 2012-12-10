@@ -1,0 +1,37 @@
+@import 'reset'
+@import "css1140"
+
+// Copying from bootstrap.css
+.modal-backdrop
+  position fixed
+  top 0
+  right 0
+  bottom 0
+  left 0
+  z-index 4000
+  background #000
+  opacity 0.8
+  filter unquote('alpha(opacity=80)')
+
+// box-sizing: box-border FTW
+*
+  -moz-box-sizing border-box
+  -webkit-box-sizing border-box
+  box-sizing border-box
+  *behavior: url(https://raw.github.com/Schepp/box-sizing-polyfill/master/boxsizing.htc)
+
+@import 'colors'
+@import 'functions'
+@import 'base'
+@import 'fonts'
+@import 'sprites'
+
+// Header and Footer
+@import 'header'
+@import 'footer'
+
+// Media queries
+@import 'media-1170'
+@import 'media-950'
+@import 'media-768'
+@import 'media-480'

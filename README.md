@@ -1,4 +1,4 @@
-Prose Bootstrap
+joseluisrivas.net
 =================
 
-A minimal template to get started with Jekyll and Prose.
+Source-code for joseluisrivas.net.

@@ -186,17 +186,13 @@ embed {
 *:focus {
   outline: none;
 }
-html {
-  height: 100%;
-}
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   font: 14px Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
-  background: url("../img/bg.png");
+  background: url("../img/bg_np.png");
 }
 a {
   text-decoration: none;
@@ -259,6 +255,40 @@ em {
   -ms-box-shadow: 0.11em 0.11em 0.55em #dbdbdb;
   -o-box-shadow: 0.11em 0.11em 0.55em #dbdbdb;
   box-shadow: 0.11em 0.11em 0.55em #dbdbdb;
+}
+body {
+  font-family: 'Alegreya', Georgia, serif;
+  font-size: 1.12em;
+  color: #364e59;
+}
+a {
+  color: #999;
+}
+a:visited {
+  color: #999;
+}
+a:hover {
+  color: #666;
+}
+strong {
+  font-weight: 700;
+}
+p {
+  padding: 1em 0;
+}
+.content p span {
+  font-weight: 700;
+  font-style: italic;
+}
+.list li {
+  display: inline;
+}
+.list h2 {
+  font-style: italic;
+  font-weight: 700;
+}
+.goup {
+  font-style: italic;
 }
 @font-face {
   font-family: 'League Gothic';
@@ -380,19 +410,23 @@ em {
   height: 40px;
 }
 header.main {
-  padding: 3% 3% 0;
+  padding: 3% 3% 3%;
   font-family: "League Gothic", Helvetica, Arial, sans-serif;
   font-size: 1.66em;
 }
 header.main a {
   text-decoration: none;
-  color: #231f20;
+  color: #666;
 }
 header.main a:visited {
-  color: #231f20;
+  color: #666;
+}
+header.main a:hover {
+  color: #2d2d2d;
 }
 header.main .logo {
   float: left;
+  text-align: center;
 }
 header.main .btn-navbar {
   display: none;
@@ -402,44 +436,64 @@ header.main .title {
   font-family: 'League Gothic', Helvetica, Arial, sans-serif;
 }
 header.main .title h1 {
-  font-size: 7em;
+  font-size: 5em;
   text-transform: uppercase;
+  color: #999;
 }
 header.main .title .tagline {
+  font-size: 0.9em;
   font-family: 'Alegreya', Georgia, serif;
   font-style: italic;
   font-weight: 700;
+  color: #9eabb0;
 }
-header.main nav#main_nav {
+header.main nav.main {
+  font-family: 'Alegreya', Georgia, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding-bottom: 3em;
+}
+header.main nav.main ul {
   float: right;
-  padding-top: 75px;
 }
-header.main nav#main_nav ul {
-  list-style: none;
-  float: left;
-  margin: 0;
-  padding: 0;
-  padding-top: 2px;
-}
-header.main nav#main_nav li {
-  float: left;
-}
-header.main nav#main_nav li.separator {
+header.main nav.main li {
   padding: 0 0.33em;
 }
-header.main nav#main_nav #search {
+header.main nav.main #search {
   float: right;
 }
-header.main nav#main_nav #search label {
+header.main nav.main #search label {
   margin-right: 0.33em;
 }
-header.main nav#main_nav #search input {
+header.main nav.main #search input {
   border: 2px solid #231f20;
   width: 110px;
 }
 footer {
-  background: #231f20;
-  padding: 1% 3%;
+  padding: 3em 0;
+  font-style: italic;
+}
+footer a {
+  font-weight: 700;
+}
+#up-first {
+  margin-top: 5em;
+  margin-bottom: 10em;
+  text-align: center;
+}
+#up-first ul li {
+  display: inline;
+}
+#ghostbar,
+#joseluisrivas {
+  min-height: 700px;
+}
+#ghostbar h1,
+#joseluisrivas h1 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.33em;
 }
 @media (min-width: 1170px) {
   .icon.taxonomy span {

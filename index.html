@@ -3,6 +3,17 @@ layout: main
 ---
 
 <header class='main twelvecol last row'>
+
+  <nav class='row main'>
+
+    <ul class='list'>
+      <li><a href='#'>Contact</a></li>
+      <li><a href='#ghostbar'>@ghostbar</a></li>
+      <li><a href='#joseluisrivas'>@joseluisrivas</a></li>
+    </ul>
+
+  </nav>
+
   <div class='logo threecol'>
     <img src='img/logo.png'>
   </div>
@@ -11,7 +22,7 @@ layout: main
     <h1>Jose Luis Rivas</h1>
 
     <div class='tagline'>
-      <p>A venezuelan <a href='#ghostbar'>Digital Crafter & Open Source Advocate</a> / <a href='#joseluisrivas'>Freethinker & Pragmatic</a></p>
+      <p>Hello, I'm an venezuelan <a href='#ghostbar'>Digital Crafter & Open Source Advocate</a> / <a href='#joseluisrivas'>Freethinker & Pragmatic</a></p>
     </div> <!-- End of div.tagline -->
 
   </div> <!-- End of div.title -->
@@ -22,33 +33,68 @@ layout: main
 
 <div class='row'>
   <section id='up-first' class='twelvecol last'>
-    <ul>
+    <ul class='list center'>
+      <li><a href='http://log.joseluisrivas.net'><img src='{{site.baseurl}}/img/logo-log.48H.png' alt='Log de Jose Luis Rivas'></a></li>
       <li><a href='mailto:joseluisDELETETHIS@rivco.net'><img src='{{site.baseurl}}/img/icons/message.png' alt='Email Jose Luis Rivas'></a></li>
       <li><a href='https://www.facebook.com/joseluisrivas'><img src='{{site.baseurl}}/img/icons/facebook.png' alt='Facebook Jose Luis Rivas'></a></li>
-      <li><a href='http://log.joseluisrivas.net'><img src='{{site.baseurl}}/img/logo-log.48H.png' alt='Log de Jose Luis Rivas'></a></li>
     </ul>
   </section> <!-- End of section.up-first -->
 </div> <!-- end of div.row -->
 
-<div class="article-navigation">
-  {% for item in site.categories.articles limit:40 offset:0 %}
-    <a class="article-link" href="{{site.baseurl}}{{item.url}}" title="{{item.title}}">
-      
-    </a>
-  {% endfor %}
-</div>
+<div class='row'>
+  <section id='ghostbar' class='twelvecol last'>
+    <h1>@ghostbar</h1>
 
-{% for item in site.categories.articles limit:1 offset:0 %}
-  <div class="intro">
-    <div class="title">{{item.title}}</div>
-    <div class="abstract">{{item.abstract}}</div>
-    <div class="meta"> Posted by <a href="http://twitter.com/{{item.author_twitter}}">{{item.author}}</a> on {{ item.date | date: "%B %d, %Y" }} </div>
-  </div>
+    <div class='clearfix'></div>
 
-  <div class="article-wrapper">
-    <div class="help post-content">
-      {{ item.content }}
-    </div>
-  </div>
-{% endfor %}
+    <div class='row'>
 
+      <div class='content sevencol'>
+        <p>I've been crafting stuff for a while, mostly for the web with <span>JavaScript</span> (even written in <em>CoffeeScript</em>), <span>Node.js</span> (<em>JavaScript server-side</em>), <span>Socket.IO</span>, <span>MongoDB</span>, <span>Redis</span> and <span>Ruby</span> (<em>Jekyll</em> and <em>Rails</em>).</p>
+
+        <p>Most of my work has been under the umbrella of my little agency <span><a href='http://www.eserre.com'>Eserre</a></span>.</p>
+
+        <p>In my spare time I've helped out <a href='http://qa.debian.org/developer.php?login=ghostbar&comaint=yes'>on <span>Debian</span> since 2006</a> & contributed small bits to the open source community.</p>
+      </div> <!-- End for div.content -->
+
+      <ul class='list fivecol last'>
+        <h2>Links</h2>
+        <li><a href='http://ghostbar.ath.cx'><img src='{{site.baseurl}}/img/logo-ghostbar.48H.png' alt="ghostbar's blog"></a></li>
+        <li><a href='https://twitter.com/ghostbar'><img src='{{site.baseurl}}/img/icons/twitter.png' alt="Ghostbar's Twitter, Jose Luis Rivas"></a></li>
+        <li><a href='http://github.com/ghostbar'><img src='{{site.baseurl}}/img/icons/terminal.png' alt="Ghostbar's Github"></a></li>
+        <li><a href='http://www.eserre.com'><img src='{{site.baseurl}}/img/logo-eserre.48H.png' alt='Eserre'></a></li>
+        <li><a href='mailto:joseluisDELETETHIS@eserre.com'><img src='{{site.baseurl}}/img/icons/message.png' alt='Email Jose Luis Rivas'></a></li>
+      </ul>
+
+    </div> <!-- End of div.row for the content section -->
+    <span class='goup right'><a href='#up'>Go back up ↑</a></span>
+  </section>
+</div> <!-- end of div.row -->
+
+<div class='row'>
+  <section id='joseluisrivas' class='twelvecol last'>
+    <h1>@joseluisrivas</h1>
+
+    <div class='clearfix'></div>
+    
+    <div class='row'>
+
+      <div class='content sevencol'>
+        <p>Some times I need to get things out of my head, and some of those things are politics-related. Since I know that topic is not of interest for everybody I have separated everything I do or write from politics and yet write/do them to get them out of my head. I write my opinion on politics in my country and around the world, how I think some public policies should be taken and how I see things in general.</p>
+        
+        <p> As a fair warning: <span>I'm normally politically incorrect</span>. So please, if you're going to read anything I wrote, <span>give it five minutes</span> before hitting back.</p>
+        
+        <p>I used to participate actively on politics, but now I'm just another spectator of that show. <span>Good thing is I only write on Spanish!</span></p>
+      </div> <!-- End for div.content -->
+
+      <ul class='list fivecol last'>
+        <h2>Links</h2>
+        <li><a href='http://ideas.joseluisrivas.net'><img src='{{site.baseurl}}/img/logo-ideas.48H.png' alt='Ideas Políticas2.0'></a></li>
+        <li><a href='https://twitter.com/joseluisrivas'><img src='{{site.baseurl}}/img/icons/twitter.png' alt='Twitter Jose Luis Rivas'></a></li>
+        <li><a href='mailto:joseluisDELETETHIS@rivco.net'><img src='{{site.baseurl}}/img/icons/message.png' alt='Email Jose Luis Rivas'></a></li>
+      </ul>
+
+    </div> <!-- End of div.row for the content section -->
+    <span class='goup right'><a href='#up'>Go back up ↑</a></span>
+  </section>
+</div> <!-- End of div.row -->

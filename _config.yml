@@ -1,7 +1,7 @@
 auto: true
 server: true
 permalink: none
-baseurl: "joseluisrivas.net"
+baseurl: "test.joseluisrivas.net"
 exclude:
 - .gitignore
 - README.md

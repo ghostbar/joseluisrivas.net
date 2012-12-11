@@ -15,8 +15,8 @@
   <body>
     <div id='container' class='container'>
 
-      <div class='row'>
-        <nav class='main'>
+      <div class='row hide'>
+        <nav class='fixed'>
           <header class='hide'>
             <a href='{{site.baseurl}}'>
               <img class='logo' src='{{site.baseurl}}/img/logo.48H.png'>
@@ -24,7 +24,7 @@
             </a>
           </header>
 
-          <ul>
+          <ul class='list'>
             <li><a href='#'>Contact</a></li>
             <li><a href='#'>@ghostbar</a></li>
             <li><a href='#'>@joseluisrivas</a></li>
@@ -32,12 +32,12 @@
         </nav>
       </div> <!-- end div.row -->
 
-      <div class='row'>
+      <div id='up' class='row'>
         {{content}}
       </div> <!-- End div.row for content -->
 
       <footer class='main'>
-        © 2012, Jose Luis Rivas.
+        © 2012, Jose Luis Rivas. Built with <a href='http://jekyllrb.com'>Jekyll</a> by <a href='http://www.eserre.com'>Eserre</a>.
       </footer>
     </div> <!-- End of div#container.container -->
   </body>

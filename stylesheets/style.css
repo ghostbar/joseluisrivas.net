@@ -221,7 +221,8 @@ body,
   font-family: 'League Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 header.main {
-  padding: 3% 3% 3%;
+  padding-right: 3%;
+  padding-left: 3%;
   font-family: "League Gothic", Helvetica, Arial, sans-serif;
   font-size: 1.66em;
 }
@@ -236,23 +237,22 @@ header.main a:hover {
   color: #2d2d2d;
 }
 header.main .logo {
-  float: left;
   text-align: center;
 }
 header.main .btn-navbar {
   display: none;
 }
 header.main .title {
-  float: right;
   font-family: 'League Gothic', Helvetica, Arial, sans-serif;
 }
 header.main .title h1 {
-  font-size: 5em;
+  font-size: 1.8em;
   text-transform: uppercase;
   color: #999;
+  text-align: center;
 }
 header.main .title .tagline {
-  font-size: 0.9em;
+  font-size: 0.8em;
   font-family: 'Alegreya', Georgia, serif;
   font-style: italic;
   font-weight: 700;
@@ -262,11 +262,11 @@ header.main nav.main {
   font-family: 'Alegreya', Georgia, serif;
   font-style: italic;
   font-weight: 700;
-  font-size: 0.8em;
+  font-size: 0.6em;
   padding-bottom: 3em;
 }
 header.main nav.main ul {
-  float: right;
+  text-align: center;
 }
 header.main nav.main li {
   padding: 0 0.33em;
@@ -332,11 +332,12 @@ p {
 }
 #ghostbar,
 #joseluisrivas {
-  padding-top: 7em;
+  padding-top: 1.33em;
   min-height: 700px;
 }
 #ghostbar h1,
 #joseluisrivas h1 {
+  text-align: center;
   font-weight: 700;
   font-style: italic;
   font-size: 2.33em;
@@ -440,6 +441,27 @@ p {
   }
   .row .last {
     margin-right: 0px;
+  }
+  header.main .title h1 {
+    font-size: 5em;
+    text-align: left;
+  }
+  header.main .tagline {
+    font-size: 0.9em;
+  }
+  header.main nav.main {
+    font-size: 0.8em;
+  }
+  header.main nav.main ul {
+    float: right;
+  }
+  #ghostbar,
+  #joseluisrivas {
+    padding-top: 7em;
+  }
+  #ghostbar h1,
+  #joseluisrivas h1 {
+    text-align: left;
   }
 }
 @media only screen and (min-width: 992px) {

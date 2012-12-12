@@ -109,6 +109,7 @@ legend {
 body {
   font: 16px sans-serif;
   -webkit-text-size-adjust: none;
+  background: url("../img/bg_np.png");
 }
 a {
   text-decoration: none;
@@ -208,6 +209,16 @@ body,
   -ms-box-shadow: 0.11em 0.11em 0.55em $light-gray;
   -o-box-shadow: 0.11em 0.11em 0.55em $light-gray;
   box-shadow: 0.11em 0.11em 0.55em $light-gray;
+}
+@font-face {
+  font-family: 'League Gothic';
+  src: url("fonts/leaguegothic-regular-webfont.eot");
+  src: url("fonts/leaguegothic-regular-webfont.eot?#iefix") format('eot'), url("fonts/leaguegothic-regular-webfont.woff") format('woff'), url("fonts/leaguegothic-regular-webfont.ttf") format('truetype'), url("fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+.leaguegothic {
+  font-family: 'League Gothic', 'Helvetica Neue', Arial, sans-serif;
 }
 header.main {
   padding: 3% 3% 3%;

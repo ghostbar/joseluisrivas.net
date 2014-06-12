@@ -1,20 +1,42 @@
-auto: true
-server: true
-permalink: none
-baseurl: ""
-exclude:
-- .gitignore
-- README.md
+# Jekyll configuration precedence:
+# 1. Gruntfile task
+# 2. config.build.yml
+# 3. config.yml
+
+name: joseluisrivas.net
+description: "Personal Homepage"
+permalink: "/:year/:month/:day/:title"
+baseurl: "http://joseluisrivas.net"
+name: "Jose Luis Rivas"
+author:
+  name: Jose Luis Rivas
+
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico',
+          '.gitignore', 'README.md']
+
+include: ['.htaccess']
+
+# _config.build.yml sets future and show_drafts to false on `grunt build`
+future: true
+show_drafts: true
+
+# Markdown library
+markdown: rdiscount
+#   extensions: []
+
+pygments: true
 
 prose:
-  rooturl: "_posts"
-  metadata: 
-    _posts/articles: |
+  rooturl: "app/_posts"
+  metadata:
+    _post/articles: |
       published: false
       layout: article
       title: Your Post Title
-      abstract: Short summary of your article.
-      author_twitter: johndoe
-      author: John Doe
+      abstract: Short summary of your article
+      author_twitter: ghostbar
+      author: Jose Luis Rivas
       categories:
-      - articles
+        - articles

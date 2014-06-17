@@ -1,4 +1,4 @@
-// Generated on 2014-06-03 using generator-jekyllrb 1.2.1
+// Generated on 2014-05-13 using generator-jekyllrb 1.2.1
 'use strict';
 
 // Directory reference:
@@ -250,11 +250,11 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
-            //'favicon.ico',
-            //'apple-touch*.png'
+            'favicon.ico',
+            'apple-touch*.png',
+            'CNAME'
           ],
           dest: '<%= yeoman.dist %>'
         }]
@@ -361,8 +361,8 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     'compass:server',
-    'jshint:all',
-    'csslint:check'
+    'jshint:all'
+    //'csslint:check'
   ]);
 
   grunt.registerTask('build', [
